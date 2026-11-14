@@ -1,0 +1,10 @@
+—------------5.PROBLEMS IN ARRAYS—--------------
+1.Finding largest element in an array
+nums=[52,32,-97,99,3,6,7]
+print(max(nums))
+n=len(nums)
+maximum = nums[0]
+for i in range(n):
+  if nums[i]> maximum:
+    maximum = nums[i]
+print(maximum)
