@@ -8,3 +8,19 @@ for i in range(n):
   if nums[i]> maximum:
     maximum = nums[i]
 print(maximum)
+
+
+--------------2.Finding second largest number in array--------
+nums=[52,32,-97,99,3,6,7]
+print(max(nums))
+n=len(nums)
+maximum = nums[0]
+for i in range(n):
+  if nums[i]> maximum:
+    maximum = nums[i]
+print(maximum)
+second_largest = float('-inf')
+for j in range(n):
+  if nums[j] > second_largest and nums[j] != maximum:
+    second_largest = nums[j]
+    print(second_largest)
