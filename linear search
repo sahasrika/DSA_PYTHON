@@ -14,3 +14,13 @@ for i in range(0,n+1):
   if i not in nums:
     print(i)
     break
+2.optimal solution--------
+nums=[6,3,2,0,4]
+n=len(nums)
+sum=0
+val=int(n*(n+1)/2)
+print(val)
+for i in range(n):
+  sum = sum + nums[i]
+print(sum)
+print(val-sum)
