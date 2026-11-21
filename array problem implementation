@@ -104,3 +104,12 @@ for j in range(maximum , n):
   if prices[j] > maximum:
     maximum = prices[j]
 print(maximum)
+------------OPTIMAL-----
+prices = [7,1,3,6,9,1]
+minimum = prices[0]
+profit = 0
+for i in range(1,len(prices)):
+  if prices[i] < minimum:
+    minimum = prices[i]
+  profit = max (profit , prices[i]-minimum)
+print(profit)
