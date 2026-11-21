@@ -65,3 +65,27 @@ for i in range(0,n-1):
     if nums[i]+ nums[j] == target:
       print(i,j)
     break
+
+--------------6.Max in sub array--------
+---kadanes optimal way---
+nums=[-2,1,-3,4,-1,2,1,-5,4]
+n=len(nums)
+maxi = float("-inf")
+total = 0 
+for i in range(0,n):
+  total += nums[i]
+  maxi = max(maxi , total)
+  if total < 0:
+    total =0
+print(maxi)
+
+-----O(N^2)----
+nums=[-2,1,-3,4,-1,2,1,-5,4]
+n=len(nums)
+maxi = float("-inf")
+for i in range(0,n):
+  total = 0
+  for j in range(i,n):
+    total += nums[j]
+    maxi = max(total , maxi)
+print (maxi)
