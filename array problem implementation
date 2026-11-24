@@ -126,3 +126,18 @@ for i in range(n):
         result[neg]=nums[i]
         neg+=2
 print (result)
+--------------LONGEST CONSEQUITVE SEQUENCE----------
+nums = [1,99,101,98,2,5,3,100]
+maximum = nums[0]
+count = 0
+nums.sort()
+n = len(nums)
+for i in range(n):
+    if nums[i] == nums[i-1]+1:
+        count += 1
+    elif nums[i] == nums[i-1]:
+        continue
+    else:
+        count = 1
+    maximum = max(maximum , count)
+print(maximum)
