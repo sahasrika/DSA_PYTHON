@@ -38,3 +38,5 @@ for i in range(0, rows):
         else:
             print("*", end=" ")
     print()
+
+------------TRANSPOSE OF A MATRIX-------
